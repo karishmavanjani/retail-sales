@@ -31,41 +31,32 @@
       <table>
         <tr>
           <th>Store Name</th>
-          <th>Number of locations visited</th>
-
-          <th>Total Average Jobs lost</th>
-
+          <th>Locations visited</th>
+          <th>Workers unemployed</th>
         </tr>
-        <tr class="item" data-tariff-percent="0">
+        <tr class="item" data-jobs="18000" data-stores="2500">
           <td>Payless Shoe Source</td>
           <td>
-            <input class="qty" type="number" placeholder="Locations" />
-            <!-- ensure only an integer how -->
+            <input class="user_visited" type="number">
           </td>
-
           <td class="pre_total"><span></span></td>
-
         </tr>
-        <tr class="item" data-tariff-percent="25">
+        <tr class="item" data-jobs="10" data-stores="100">
           <td> Charlotte Russe</td>
-          <td><input class="qty" type="number" /></td>
-
+          <td><input class="user_visited" type="number"></td>
           <td class="pre_total"><span></span></td>
-
         </tr>
-        <tr class="item" data-tariff-percent="10">
+        <tr class="item" data-jobs="10" data-stores="100">
           <td>Sears</td>
-          <td><input class="qty" type="number" /></td>
-
+          <td><input class="user_visited" type="number"></td>
           <td class="pre_total"><span></span></td>
-
         </tr>
       </table>
 
 
 
-      <div id="pre_total" class="total">
-        <h2>Number of workers laid-off</h2>
+      <div id="post_total" class="total">
+        <h2>Total workers laid-off</h2>
         <span></span>
       </div>
     </div>
