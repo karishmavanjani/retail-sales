@@ -13,9 +13,9 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 	// ensuring we take an integer from user irrespective of what he types
 	// console.log("stores", totalstores);
 	// console.log("jobs", totaljobs);
-	if (total_visited < 0) {
+	if (total_visited < 0 || typeof total_visited !== "number") {
 		$(".total").find("span").addClass("error");
-		$(".total").find("span").text("Negative values entered");
+		$(".total").find("span").text("Incorrect values entered");
 		// this_row.find(".pre_total").find("span").addClass("error");
 		// this_row.find(".pre_total").find("span").text("Negative values entered");
 	} else {
