@@ -54,6 +54,8 @@ hr {
 }
 
 #resetbutton {
+    padding: 1px 1px 1px 1px;
+    text-align: center;
     display: block;
     height: 25px;
     margin-right: 40px;
@@ -61,7 +63,6 @@ hr {
     font-weight: 2em;
     line-height: 4px;
     width: 60px;
-    text-align: center;
     align: center;
     border: 2px solid #BDBFBF;
     margin-left: 50%;

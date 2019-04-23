@@ -48,10 +48,7 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 				$(".total").find("span").text(pre_total + " Employees Laid-off");
 			}
 		});
-
-
 	}
-
 
 	// $(".post_total").each(function () {
 	// 	//more stuff
@@ -62,4 +59,11 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 	// $("#pre_total").find("span").text(pre_total);
 	// $("#post_total").find("span").text(post_total);
 
+});
+// $("form").reset(function (event) {
+// 	$(".total").removeClass("sticky");
+// });
+
+$(".resetbutton").click(function () {
+	$(".total").addClass("disabled");
 });
