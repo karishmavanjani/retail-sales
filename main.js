@@ -1,10 +1,11 @@
 $("body").on("keyup keydown keypress change", "input", function (e) {
+
 	var this_input = $(this),
 		this_row = this_input.closest(".item"),
 		total_visited = this_row.find(".user_visited").val(),
 		totalstores = parseInt(this_row.data("stores")),
 		totaljobs = parseInt(this_row.data("jobs"));
-
+	// $(".total").addclass("disabled");
 	if (total_visited === "") {
 		total_visited = 0;
 	}
@@ -14,11 +15,16 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 	// console.log("stores", totalstores);
 	// console.log("jobs", totaljobs);
 	if (total_visited < 0 || typeof total_visited !== "number") {
+		// $(".total").find("span").removeclass("disabled");
+		$(".total").addClass("sticky");
 		$(".total").find("span").addClass("error");
 		$(".total").find("span").text("Incorrect values entered");
 		// this_row.find(".pre_total").find("span").addClass("error");
 		// this_row.find(".pre_total").find("span").text("Negative values entered");
 	} else {
+		$(".total").addClass("sticky");
+		// $(".total").find("span").removeclass("disabled");
+		// $(".total").removeClass('disabled');
 		$(".total").find("span").removeClass("error");
 
 		// this_row.find(".pre_total").find("span").removeClass("error");
