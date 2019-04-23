@@ -45,7 +45,7 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 				pre_total = pre_total + this_pre_total;
 				// console.log(pre_total);
 				// $(".total").find("span").addClass("active");
-				$(".total").find("span").text(pre_total + " Unemployed");
+				$(".total").find("span").text(pre_total + " Employees Laid-off");
 			}
 		});
 

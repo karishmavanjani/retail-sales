@@ -53,6 +53,21 @@ hr {
     color: #BDBFBF;
 }
 
+#resetbutton {
+    display: block;
+    height: 25px;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 2em;
+    line-height: 4px;
+    width: 60px;
+    text-align: center;
+    align: center;
+    border: 2px solid #BDBFBF;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
 input {
     display: inline-block;
     width: 100px;
@@ -63,7 +78,7 @@ input {
     /* padding: 1 1px; */
     /* padding: 6px */
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 2em;
     height: 45px;
     line-height: 40px;
@@ -121,6 +136,10 @@ img {
 }
 
 .sticky {
+    /* This is necessary for the pseudo element to work. */
+    /* This will put the pseudo element on its own line. */
+    /* This will center the border. */
+    /* This creates some space between the element and the border. */
     text-align: center;
     padding-bottom: 2px;
     display: block;
@@ -131,13 +150,15 @@ img {
     color: rgb(122, 16, 29);
     /* top: 95%; */
     bottom: 0;
-    right: 50%;
-    left: 50%;
+    right: 22%;
+    left: 22%;
     margin-right: -50%;
     margin-left: -50%;
+    /* padding: 30px 30px 30px 30px; */
     height: 40px;
     background: white;
     border: 2px;
+    border-spacing: 100%;
     border-top: 1px solid #BDBFBF;
 }
 
