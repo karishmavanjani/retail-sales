@@ -17,12 +17,14 @@ $("body").on("keyup keydown keypress change", "input", function (e) {
 	if (total_visited < 0 || typeof total_visited !== "number") {
 		// $(".total").find("span").removeclass("disabled");
 		$(".total").addClass("sticky");
+		$(".total").removeClass("disabled");
 		$(".total").find("span").addClass("error");
 		$(".total").find("span").text("Incorrect values entered");
 		// this_row.find(".pre_total").find("span").addClass("error");
 		// this_row.find(".pre_total").find("span").text("Negative values entered");
 	} else {
 		$(".total").addClass("sticky");
+		$(".total").removeClass("disabled");
 		// $(".total").find("span").removeclass("disabled");
 		// $(".total").removeClass('disabled');
 		$(".total").find("span").removeClass("error");
