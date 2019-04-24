@@ -69,6 +69,10 @@ hr {
     margin-right: 50%;
 }
 
+.reset {
+    visibility: hidden;
+}
+
 input {
     display: inline-block;
     width: 100px;
@@ -146,7 +150,7 @@ img {
     display: block;
     overflow: auto;
     position: fixed;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300px;
     color: rgb(122, 16, 29);
     /* top: 95%; */
