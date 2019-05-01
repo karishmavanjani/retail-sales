@@ -20,6 +20,12 @@ html, body {
 }
 
 .container {
+    /* font-family: "Open Sans", sans-serif; */
+    /* color: #404040; */
+    /* font-family: "open sans"; */
+    font-family: georgia, "times new roman", times, serif;
+    font-size: 15px;
+    line-height: 22px;
     max-width: 600px;
     margin: 0 auto;
     /* padding: 1em;
@@ -30,6 +36,10 @@ html, body {
     /* overflow: auto; */
     /* position: relative; */
     /* height: 160% */
+}
+
+h1 {
+    line-height: 30px;
 }
 
 td th {
@@ -149,22 +159,23 @@ img {
     padding-bottom: 2px;
     display: block;
     overflow: auto;
-    position: fixed;
+    position: sticky;
     font-size: 30px;
     font-weight: 300px;
     color: rgb(122, 16, 29);
     /* top: 95%; */
     bottom: 0;
-    right: 22%;
-    left: 22%;
-    margin-right: -50%;
-    margin-left: -50%;
-    /* padding: 30px 30px 30px 30px; */
-    height: 40px;
+    min-height: 40px;
     background: white;
-    border: 2px;
-    border-spacing: 100%;
-    border-top: 1px solid #BDBFBF;
+    padding: 10px;
+}
+
+.intro {
+    color: #404040;
+}
+
+.sticky span {
+    display: block;
 }
 
 .error {
@@ -177,6 +188,10 @@ img {
 
 .superscript:active {
     font-size: 10px;
+}
+
+form {
+    position: relative;
 }
 
 /* Tablet/Desktop overrides */
