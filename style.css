@@ -42,6 +42,18 @@ h1 {
     line-height: 30px;
 }
 
+h2 {
+    font-size: 15px;
+}
+
+.img-resize {
+    width: 140%;
+    margin-left: 0px;
+    padding: 1px 1px;
+    text-align: left;
+    margin-right: 30px;
+}
+
 td th {
     max-width: auto;
     display: block;
