@@ -21,7 +21,7 @@ html, body {
 
 .container {
     /* font-family: "Open Sans", sans-serif; */
-    /* color: #404040; */
+    color: #404040;
     /* font-family: "open sans"; */
     font-family: georgia, "times new roman", times, serif;
     font-size: 15px;
@@ -47,11 +47,11 @@ h2 {
 }
 
 .img-resize {
-    width: 140%;
-    margin-left: 0px;
-    padding: 1px 1px;
-    text-align: left;
-    margin-right: 30px;
+    margin-left: -8em;
+    margin-right: 1em;
+    width: 150%;
+    padding: 1 1 1 1px;
+    text-align: center;
 }
 
 td th {
@@ -73,6 +73,7 @@ hr {
     border-style: inset;
     border-width: 1px;
     color: #BDBFBF;
+    color: black;
 }
 
 #resetbutton {
@@ -184,7 +185,7 @@ img {
 }
 
 .intro {
-    color: #404040;
+    color: black;
     margin-bottom: 40px;
 }
 
@@ -224,6 +225,14 @@ form {
 
     img {
         margin-left: 60px;
+    }
+
+    .img-resize {
+        margin-left: -150px;
+        margin-right: 0px;
+        width: 130%;
+        padding: 1 1 1 1px;
+        text-align: center;
     }
 }
 
